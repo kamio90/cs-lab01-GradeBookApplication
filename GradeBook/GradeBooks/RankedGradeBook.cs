@@ -41,5 +41,27 @@ namespace GradeBook.GradeBooks
             }
             return 'F';
         }
+        
+        public override void CalculateStatistics()
+        {
+            if (Students.Count() < 5)
+            {
+                Console.WriteLine("Ranking wymaga przynajmniej 5 studentów.");
+                return;
+            }
+
+            base.CalculateStatistics();
+        }
+
+        public override void CalculateStudentStatistics(string name)
+        {
+            if (Students.Count() < 5)
+            {
+                Console.WriteLine("Ranking wymaga przynajmniej 5 studentów.");
+                return;
+            }
+
+            base.CalculateStudentStatistics(name);
+        }
     }
 }
