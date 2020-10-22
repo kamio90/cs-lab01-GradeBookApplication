@@ -11,9 +11,9 @@ namespace GradeBook.GradeBooks
 {
     public class BaseGradeBook
     {
-        //public GradeBookType Type;
+        public GradeBookType Type;
 
-        public Type gradeBookType = typeof(GradeBookType);
+        //public Type gradeBookType = typeof(GradeBookType);
         public string Name { get; set; }
         public List<Student> Students { get; set; }
 
